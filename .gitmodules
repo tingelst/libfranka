@@ -1,3 +1,4 @@
 [submodule "common"]
 	path = common
 	url = https://github.com/tingelst/libfranka-common.git
+	branch = fr3-develop

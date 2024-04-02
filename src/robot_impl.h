@@ -253,12 +253,12 @@ inline void Robot::Impl::handleCommandResponse<research_interface::robot::Move>(
           "libfranka: "s +
           research_interface::robot::CommandTraits<research_interface::robot::Move>::kName +
           " command aborted!");
-    case research_interface::robot::Move::Status::kPreemptedDueToActivatedSafetyFunctions:
-      throw CommandException(
-          "libfranka: "s +
-          research_interface::robot::CommandTraits<research_interface::robot::Move>::kName +
-          " command preempted due to activated safety function! Please disable all safety "
-          "functions.");
+    // case research_interface::robot::Move::Status::kPreemptedDueToActivatedSafetyFunctions:
+    //  throw CommandException(
+    //      "libfranka: "s +
+    //      research_interface::robot::CommandTraits<research_interface::robot::Move>::kName +
+    //      " command preempted due to activated safety function! Please disable all safety "
+    //      "functions.");
     // case research_interface::robot::Move::Status::kCommandRejectedDueToActivatedSafetyFunctions:
     //   throw CommandException(
     //       "libfranka: "s +
